@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 320px;
+    background: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.site-header {
+    color: #fff;
+}
+
+.navbar {
+    min-height: 60px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #131921;
+}
+
+.border {
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.border:hover {
+    border-color: #fff;
+}
+
+.border:focus-visible,
+.subnav a:focus-visible {
+    outline: 2px solid #ff9900;
+    outline-offset: 1px;
+}
+
+.nav-logo {
+    width: 110px;
+    height: 50px;
+    flex: 0 0 110px;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px 0;
+}
+
+.logo {
+    width: 100%;
+    height: 44px;
+    display: block;
+    background: url("amazon_logo.png") center / contain no-repeat;
+}
+
+.nav-address {
+    height: 50px;
+    flex: 0 0 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px 5px;
+}
+
+.add-first {
+    margin-left: 19px;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-icon i {
+    font-size: 18px;
+}
+
+.add-second {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.nav-search {
+    height: 40px;
+    min-width: 120px;
+    flex: 1 1 auto;
+    display: flex;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.nav-search:focus-within {
+    border-color: #ff9900;
+    box-shadow: 0 0 0 1px #ff9900;
+}
+
+.nav-search select {
+    width: 52px;
+    flex: 0 0 52px;
+    padding: 0 7px;
+    border: 0;
+    border-right: 1px solid #ccc;
+    color: #444;
+    background: #e6e6e6;
+    font-size: 13px;
+}
+
+.nav-search input {
+    width: 0;
+    min-width: 0;
+    flex: 1;
+    padding: 0 12px;
+    border: 0;
+    outline: 0;
+    color: #111;
+    font-size: 16px;
+}
+
+.nav-search input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+.nav-search button {
+    width: 48px;
+    flex: 0 0 48px;
+    border: 0;
+    color: #131921;
+    background: #febd69;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-search button:hover {
+    background: #f3a847;
+}
+
+.nav-language {
+    height: 50px;
+    flex: 0 0 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-language i,
+.nav-account i,
+.subnav i {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.us-flag {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+    background: repeating-linear-gradient(to bottom, #b22234 0 1px, #fff 1px 2px);
+}
+
+.us-flag::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 7px;
+    background: #3c3b6e;
+    content: "";
+}
+
+.nav-copy {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6px;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.nav-copy strong {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.nav-account {
+    flex: 0 0 auto;
+}
+
+.nav-orders {
+    flex: 0 0 auto;
+}
+
+.nav-cart {
+    height: 50px;
+    min-width: 80px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 0 4px;
+}
+
+.cart-icon {
+    position: relative;
+    height: 36px;
+    display: inline-flex;
+    align-items: flex-end;
+    font-size: 31px;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -2px;
+    left: 18px;
+    color: #f08804;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-cart strong {
+    align-self: flex-end;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.subnav {
+    height: 40px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow-x: auto;
+    background: #232f3e;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+
+.subnav::-webkit-scrollbar {
+    display: none;
+}
+
+.subnav a {
+    height: 34px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 9px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.subnav a:hover {
+    border-color: #fff;
+}
+
+.subnav-all {
+    font-size: 15px !important;
+}
+
+.subnav-all i {
+    color: #fff;
+    font-size: 19px;
+}
+
+.alexa-link {
+    height: 24px !important;
+    margin: 0 5px;
+    padding: 0 10px !important;
+    border: 0 !important;
+    border-radius: 20px !important;
+    color: #555;
+    background: #fff;
+    font-size: 13px !important;
+}
+
+.alexa-link span {
+    color: #00a8e0;
+    font-family: cursive;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+@media (max-width: 1120px) {
+    .subnav a:nth-child(4),
+    .subnav a:nth-child(5),
+    .subnav a:nth-child(n + 8) {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-address,
+    .nav-language,
+    .nav-orders {
+        display: none;
+    }
+
+    .subnav a:nth-child(n + 6) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 66px;
+        grid-template-rows: 50px 40px;
+        gap: 2px 8px;
+        padding: 0 8px 6px;
+    }
+
+    .nav-logo {
+        grid-column: 1;
+        grid-row: 1;
+        width: 104px;
+        height: 46px;
+        flex: none;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-account {
+        display: none;
+    }
+
+    .nav-cart {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        height: 46px;
+    }
+
+    .nav-search {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    .subnav {
+        height: 38px;
+        padding: 0 4px;
+    }
+
+    .subnav a {
+        padding: 0 8px;
+        font-size: 13px;
+    }
+}

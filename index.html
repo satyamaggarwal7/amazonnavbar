@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="navbar">
+            <a class="nav-logo border" href="#" aria-label="Amazon home">
+                <span class="logo"></span>
+            </a>
+
+            <div class="nav-address border">
+                <span class="add-first">Deliver to</span>
+                <span class="add-icon">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <span class="add-second">India</span>
+                </span>
+            </div>
+
+            <form class="nav-search" role="search">
+                <label class="visually-hidden" for="search-category">Search category</label>
+                <select id="search-category" aria-label="Search category">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Fashion</option>
+                </select>
+                <label class="visually-hidden" for="site-search">Search Amazon</label>
+                <input id="site-search" type="search" placeholder="Search Amazon">
+                <button type="submit" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+            </form>
+
+            <button class="nav-language border" type="button" aria-label="Language: English">
+                <span class="us-flag" aria-hidden="true"></span>
+                <span>EN</span>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+
+            <a class="nav-account nav-copy border" href="#">
+                <span>Hello, Satyam</span>
+                <strong>Account &amp; Lists <i class="fa-solid fa-caret-down" aria-hidden="true"></i></strong>
+            </a>
+
+            <a class="nav-orders nav-copy border" href="#">
+                <span>Returns</span>
+                <strong>&amp; Orders</strong>
+            </a>
+
+            <a class="nav-cart border" href="#" aria-label="Cart, 0 items">
+                <span class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    <span>0</span>
+                </span>
+                <strong>Cart</strong>
+            </a>
+        </div>
+
+        <nav class="subnav" aria-label="Main navigation">
+            <a class="subnav-all" href="#"><i class="fa-solid fa-bars" aria-hidden="true"></i><strong>All</strong></a>
+            <a class="alexa-link" href="#"><span>alexa</span> for shopping</a>
+            <a href="#">Prime Video</a>
+            <a class="optional-link" href="#">Satyam's Amazon.com</a>
+            <a class="optional-link" href="#">Coupons</a>
+            <a class="optional-link" href="#">Customer Service</a>
+            <a class="optional-link" href="#">Browsing History <i class="fa-solid fa-caret-down" aria-hidden="true"></i></a>
+            <a class="optional-link" href="#">Today's Deals</a>
+            <a class="optional-link" href="#">Registry</a>
+            <a class="optional-link" href="#">Buy Again</a>
+            <a class="optional-link" href="#">Gift Cards</a>
+            <a class="optional-link" href="#">Sell</a>
+        </nav>
+    </header>
+</body>
+</html>
